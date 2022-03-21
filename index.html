@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shrimayee landing page</title>
+</head>
+
+<body>
+    <section class="showcase active">
+        <header>
+            <h2 class="logo">Portfolio</h2>
+            <div class="toggle active"></div>
+        </header>
+        <video src="video.mp4" muted loop autoplay></video>
+
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>I am</h2>
+            <h3>Shrimayee Deshpande</h3>
+            <p>This is my journey of learning new things everyday, because if knowledge is like a drop of water, I've got an ocean to explore...</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li>
+                <a href="#"><img src="instagram.png" alt="instagram"></a>
+            </li>
+            <li>
+                <a href="#"><img style="height: 41px; width: 41px;" src="linkedin.png" alt="linkedin"></a>
+            </li>
+            <li>
+                <a href="#"><img src="twitter.png" alt="twitter"></a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact me</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
